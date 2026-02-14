@@ -1,20 +1,21 @@
 {
-  "name": "celke_node",
+  "name": "api-node-fast",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch api/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.17",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
   "dependencies": {
-    "cors": "^2.8.6",
-    "dot-env": "^0.0.1",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "supabase": "^2.76.8",
-    "web-push": "^3.6.7"
+    "@fastify/cors": "^11.0.1",
+    "fastify": "^5.2.2"
   }
 }
