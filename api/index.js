@@ -1,7 +1,6 @@
 // Incluir as bibliotecas
 // Gerencia as requisições, rotas e URLs, entre outra funcionalidades
 
-require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const webPush = require("web-push");
