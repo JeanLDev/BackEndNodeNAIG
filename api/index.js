@@ -37,6 +37,5 @@ app.get("/contato", function(req, res){
 });
 
 // Iniciar o servidor na porta 8080
-app.listen(8080, () => {
-    console.log("Servidor iniciado na porta 8080: http://localhost:8080");
-});
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
