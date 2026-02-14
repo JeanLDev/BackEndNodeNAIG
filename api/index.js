@@ -16,7 +16,7 @@ const app = express();
 
 // Criar as rotas
 app.get("/", function(req, res){
-    res.send("Gerenciador Financeiro");
+    res.send("Gerenciador Financeiro API");
 });
 
 app.get("/vapid-public-key", (req, res) => {
