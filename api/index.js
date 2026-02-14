@@ -19,11 +19,9 @@ const app = express();
 app.get("/", function(req, res){
     res.send("Gerenciador Financeiro");
 });
-app.get("/keys", function(req, res){
-    res.send(VAPID_PUBLIC_KEY);
-    res.send(VAPID_PRIVATE_KEY);
-    res.send(SUPABASE_URL);
-    res.send(SUPABASE_SERVICE_KEY);
+
+app.get("/vapid-public-key", (req, res) => {
+  res.send({ publicKey: VAPID_PUBLIC_KEY });
 });
 
 app.get("/sobre-empresa", function(req, res){
