@@ -8,7 +8,7 @@ app.register(cors, {
 });
 
 app.get("/", () => {
-  return "hello world";
+  return "hello world!!";
 });
 
 app
